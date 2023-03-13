@@ -5,7 +5,7 @@ Pollen is known to be the only source of proteins and fats for honey bees. There
 # About this repo
 This *beesypollen* repo was published together with the paper [ref] and offers the possibility to detect pollen and extract their colours without using the Pollenyzer web app interface. This can be useful to adapt the code to your own needs or to run the pollen detection automatically on multiple images. If neither of these apply, I recommend using the web interface: <https://pollenyzer.github.io>.
 
-In order to use the colour calibration feature of pollen images please take a look at *beesycc* repository here: <>
+In order to use the colour calibration feature of pollen images please take a look at *beesycc* repository here: <https://github.com/pollenyzer/beesycc>
 
 # Installation
 
