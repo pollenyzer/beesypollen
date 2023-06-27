@@ -1,11 +1,19 @@
+![Pollenyzer logo](media_files/pollenyzer-logo.png)
 # What is Pollenyzer
 
 Pollen is known to be the only source of proteins and fats for honey bees. Therefore it is an important part of the honey bees’ nutrition. They are essential for brood care and a good indicator of the quality of a site. It is also known that a diverse diet makes colonies more robust, also in relation to winter losses. In this work, an app is presented that allows to quantify the pollen from a pollen trap and to determine its colour diversity in an automatic way. The colour diversity is closely related to the actual plant diversity. This correlation allows conclusions to be drawn on the quality of a site and on biodiversity in general. In this way, the app provides beekeepers with important information about the well-being of their colonies, while scientists can benefit from aggregated information about local biodiversity. The app is available as a web app on all devices.
 
-# About this repo
-This *beesypollen* repo was published together with the paper [ref] and offers the possibility to detect pollen and extract their colours without using the Pollenyzer web app interface. This can be useful to adapt the code to your own needs or to run the pollen detection automatically on multiple images. If neither of these apply, I recommend using the web interface: <https://pollenyzer.github.io>.
+![Pollenyzer use-case](media_files/how-to-pollenyzer.jpg)
+*The image above gives an impression for a possible use case. Note the optional print test strip that can be used to calibrate the image colors to an absolute color space. Such print test strip can be obtained from any standard Kellogs(TM) cereal packaging from the grocery store.*
 
-In order to use the colour calibration feature of pollen images please take a look at *beesycc* repository here: <https://github.com/pollenyzer/beesycc>
+# About this repo
+This *beesypollen* repo was published together with the paper [Introducing Pollenyzer: An app for automatic determination of colour diversity for corbicular pollen loads](https://doi.org/10.1016/j.atech.2023.100263) and offers the possibility to detect pollen and extract their colours without using the Pollenyzer web app interface. This can be useful to adapt the code to your own needs or to run the pollen detection automatically on multiple images. If neither of these apply, I recommend using the web interface: <https://pollenyzer.github.io>.
+
+![pollenyzer-app](media_files/pollenyzer-app.png)
+*This is a visualization of detected pollen (left) and automatically clustered pollen colors (right).*
+
+
+In order to use the colour calibration feature of pollen images please take a look at *beesycc* repository here: [beesycc repository](https://github.com/pollenyzer/beesycc).
 
 # Installation
 
