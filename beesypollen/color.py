@@ -68,7 +68,7 @@ def _extract_single_pollen_color_rgb(
         predicted_labels = GMM.fit_predict(px_list_lab)
         extracted_colors_lab = GMM.means_.astype(np.uint8)
     elif method == COLOR_EXTRACTION_METHOD.KMEANS:
-        KM = KMeans(2, max_iter=10)
+        KM = KMeans(2, max_iter=10, n_init="auto")
         predicted_labels = KM.fit_predict(px_list_lab)
         extracted_colors_lab = KM.cluster_centers_.astype(np.uint8)
     else:
