@@ -130,7 +130,7 @@ def detect_pollen_m11_06(
         cv2.imwrite(
             join(log_dir, f"3_annotated.jpg"),
             cv2.cvtColor(
-                cv2.addWeighted(img_raw, 0.5, annotated_img, 1 - 0.5, 0),
+                cv2.addWeighted(img_raw_rgb, 0.5, annotated_img, 1 - 0.5, 0),
                 cv2.COLOR_RGB2BGR
             )
         )
