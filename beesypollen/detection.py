@@ -189,10 +189,10 @@ def detect_pollen_m11_02(
 
     if log_dir is not None:
         Path(log_dir).mkdir(exist_ok=True, parents=True)
-        cv2.imwrite(join(log_dir, f"0_raw.png"), std_img)
-        cv2.imwrite(join(log_dir, f"1_std.png"), std_img)
+        # cv2.imwrite(join(log_dir, f"0_raw.jpg"), std_img)
+        cv2.imwrite(join(log_dir, f"1_std.jpg"), std_img)
         cv2.imwrite(
-            join(log_dir, f"2_pred.png"),
+            join(log_dir, f"2_pred.jpg"),
             pollen_detection_heatmap[0, :, :, 0] * 255,
         )
 
@@ -229,8 +229,11 @@ def detect_pollen_m11_02(
                 color=(100, 100, 255),
             )
         cv2.imwrite(
-            join(log_dir, f"3_annotated.png"),
-            cv2.cvtColor(annotated_img, cv2.COLOR_RGB2BGR)
+            join(log_dir, f"3_annotated.logdir"),
+            cv2.cvtColor(
+                cv2.addWeighted(img_raw_rgb, 0.5, annotated_img, 1 - 0.5, 0),
+                cv2.COLOR_RGB2BGR
+            )
         )
 
     L.info(f"{len(pollen_detections_xy)} pollen detected.")
